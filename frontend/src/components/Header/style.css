@@ -1,0 +1,195 @@
+:root{
+    --green-default-color: rgba(49, 214, 166, 1);;
+    --green-hover-color: rgb(43, 194, 151);;
+}
+
+/*header*/
+.header{
+    grid-area: header;
+}
+
+
+/*hamburger-menu*/
+.menubut{
+    position: relative;
+    transition: 350ms;
+    background-color: #f8f8f8;
+    height: 45px !important;
+    width: 45px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menubut span{
+    margin: 2px 0;
+    height: 3px;
+    width: 25px;
+    background-color: rgba(0, 0, 0, .7);
+    border: 2px solid rgba(0, 0, 0, .7);
+    border-radius: 25%;
+}
+.menubut:hover{
+    background-color: #e3e6e9;
+    transform: scale(1.05);
+}
+
+
+
+/*first li*/
+.header{
+    min-height: 60px;
+    border-bottom: .5px solid rgba(226, 226, 226, .5);
+    background-color: #fff !important;
+    box-shadow: 0 0 4px rgba(14, 55, 63, 0.2)
+}
+.header ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.header ul .firstLi{
+    display: flex;
+    align-items: center;
+}
+.header ul .firstLi h3{
+    font-size: 30px;
+    line-height: 60px;
+    color: #000;
+}
+
+.header ul .firstLi div{
+    display: flex;
+    border-radius: 3px;
+    min-height: 60px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 15px;
+}
+
+
+/*seccond-li // navbar*/
+.header ul .secLi{
+    display: flex;
+    align-items: center;
+
+}
+.header ul .secLi ul{
+    min-height: 60px;
+    max-width: 700px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.header ul .secLi ul li .link{
+    /* color:rgba(255, 255, 255, 0) !important;
+     */
+    color: rgba(0, 0, 0, .4);
+    font-weight: 600;
+    font-size: 16px;
+}
+.header ul .secLi ul li .link:hover{
+    color: var(--green-default-color);
+}
+.header ul .secLi ul li .link .login:hover{
+    background-color: var(--green-hover-color);
+}
+.header ul .secLi ul li .link .login h4{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 1000px){
+    /*header*/
+    .navbar{
+        margin: 0;
+        padding: 0;
+    }
+
+    .header ul .firstLi h3{
+        margin-left: 15px;
+    }
+    .header ul .firstLi{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .header ul .secLi{
+        background-color: #fff;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        border-top: 1px black solid;
+        top: 90px;
+        left: 0;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+        display: flex;
+        transition: 1s;
+
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        z-index: -10;
+    }
+    .header ul .secLi ul{
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .header ul .secLi ul li{
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, .4);
+        /* padding-bottom: 15px; */
+    }
+    .menubut{
+        display: flex;
+        margin-right: 15px;
+    }
+    .active{
+        visibility: visible !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        z-index: 10 !important;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    /*header*/
+    .header ul{
+        justify-content: left;
+    }
+
+    .header ul .firstLi div{
+        display: none;
+    }
+
+
+}
+
+@media only screen and (max-width: 370px){
+    /*header*/
+    .header .top ul li:nth-child(2){
+        display: none;
+    }
+
+
+    /*main*/
+}
