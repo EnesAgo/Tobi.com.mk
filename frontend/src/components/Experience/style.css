@@ -1,0 +1,52 @@
+
+ .container {
+    max-width: 968px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  .experience{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    margin: 15px 0;
+    margin-bottom: 30px;
+  }
+  .section__title{
+    text-decoration: underline;
+  }
+  .experience__container {
+    row-gap: 2.5rem;
+    justify-content: center;
+    justify-items: center;
+  }
+  
+  .experience__content {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    justify-items: center;
+    padding: 0 2rem;
+  }
+  
+  .experience__number {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience__description {
+    font-size: .875rem;
+  }
+  .experience__data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

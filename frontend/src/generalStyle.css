@@ -4,11 +4,11 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: sans-serif, Arial, Helvetica;
 }
 html, body, #root{
     height: 100%;
     width: 100%;
-
 }
 
 #root{
@@ -20,4 +20,8 @@ html, body, #root{
 
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto auto;
+}
+
+.main{
+    grid-area: main;
 }

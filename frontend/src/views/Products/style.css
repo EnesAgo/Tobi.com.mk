@@ -1,0 +1,37 @@
+.productMain{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.AllProducts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+.Product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 30px 15px;
+    /* padding-bottom: 10px; */
+    margin: 0 15px;
+}
+.Product:last-child{
+    border-bottom: none !important;
+}
+.Product .productIMG{
+    width: 100px;
+}
+.Product .ProductText{
+    min-width: 500px;
+}

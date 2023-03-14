@@ -1,8 +1,8 @@
 import React from 'react'
 import '../../generalStyle.css'
+import './style.css'
 import ContactForm from './parts/ContactForm';
 import ContactMap from './parts/ContactMap';
-import './style.css'
 
 function Contact() {
       return (

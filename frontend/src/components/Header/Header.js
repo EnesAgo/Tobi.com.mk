@@ -28,7 +28,7 @@ function Header() {
               <ul>
                 <li className="firstLi">
                     <img src='/images/Logo.jpg' height={"60px"} />
-                    <h3><span className="logo">To</span>bi</h3>
+                    {/* <h3><span className="logo">To</span>bi</h3> */}
                     <span id="openNav" className="menubut" onClick={changeActive}>
                         <span></span>
                         <span></span>

@@ -1,6 +1,7 @@
 import React from 'react'
 import useWindowSizeOnce from '../../../hooks/useWindowSizeOnce';
 import '../style.css'
+import '../../../generalStyle.css'
 
 
 function ContactMap() {
