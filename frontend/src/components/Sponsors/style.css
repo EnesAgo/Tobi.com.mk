@@ -1,0 +1,24 @@
+.sponsor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+
+    margin: 50px 0;
+}
+.sponsor ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sponsor ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sponsor ul li img{
+    width: 125px;    
+}

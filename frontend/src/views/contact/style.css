@@ -21,11 +21,6 @@
 
 /* termin */
 
-:root{
-    --yellow-default-color: #ffd700;
-    --yellow-hover-color: #ffe550;
-}
-
 .register {
     flex-direction: row;
     align-items: center;

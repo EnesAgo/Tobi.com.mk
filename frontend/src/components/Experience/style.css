@@ -17,8 +17,8 @@
 
     gap: 25px;
 
-    margin: 15px 0;
-    margin-bottom: 30px;
+    margin: 50px 0;
+    /* margin-bottom: 30px; */
   }
   .section__title{
     text-decoration: underline;

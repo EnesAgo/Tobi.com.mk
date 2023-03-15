@@ -9,12 +9,14 @@ import Contact from "./views/contact/Contact";
 import Home from "./views/Home/Home";
 import NotFound from "./views/NotFound/NotFound";
 import Products from "./views/Products/Products";
+import Wallpaper from "./components/Wallpaper/Wallpaper";
 
 function App() {
   return (
     <>
 
       <Header />
+      <Wallpaper />
 
       <Routes>
 
