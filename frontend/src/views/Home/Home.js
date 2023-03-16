@@ -42,25 +42,25 @@ function Home() {
 
             <ul className='offers'>
                 {
-                    offerList.map((e, i) => {
-                        if(i%2==0){
+                    offerList.map((element, index) => {
+                        if(index%2==0){
                             return (
-                                <li>
+                                <li key={`${element.imgUrl}-${element.text}-${Math.random()*100}`}>
                                     <ContainerTypeA 
-                                        text={e.text} 
-                                        imgUrl={e.imgUrl} 
-                                        imgAlt={e.imgAlt} 
+                                        text={element.text} 
+                                        imgUrl={element.imgUrl} 
+                                        imgAlt={element.imgAlt} 
                                     />
                                 </li>
                             )
                         }
                         else{
                             return (
-                                <li>
+                                <li key={`${element.imgUrl}-${element.text}-${Math.random()*100}`}>
                                     <ContainerTypeB
-                                        text={e.text} 
-                                        imgUrl={e.imgUrl} 
-                                        imgAlt={e.imgAlt} 
+                                        text={element.text} 
+                                        imgUrl={element.imgUrl} 
+                                        imgAlt={element.imgAlt} 
                                     />
                                 </li>
                             )

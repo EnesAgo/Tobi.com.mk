@@ -23,18 +23,39 @@ function OneProduct({img, name, desc, brands}) {
     
 }
 
+function OneProductReverse({img, name, desc, brands}) {
+
+    return (
+        <div className='Product'>            
+            <div className='ProductText'>
+
+                <h3>{name}</h3>
+
+                <p className='textP'>
+                    <NewLineText text={desc} />
+                    <span className='textPBrands'>{brands}</span>
+                </p>
+            </div>
+
+            <img className='productIMG' src={img} alt={name} />
+
+        </div>
+    )
+    
+}
+
 function NewLineText(text) {
 
     return (text.text.toString().split("\n").map((value, index) => {
-        console.log(value)
         return (
-          <p key={index}>
+          <span key={index}>
             {value}
             <br />
-          </p>
+          </span>
         )
       })
     )
 }
 
-export default OneProduct;
+
+export {OneProduct, OneProductReverse}

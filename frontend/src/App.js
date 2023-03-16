@@ -10,6 +10,7 @@ import Home from "./views/Home/Home";
 import NotFound from "./views/NotFound/NotFound";
 import Products from "./views/Products/Products";
 import Wallpaper from "./components/Wallpaper/Wallpaper";
+import About from "./views/about/About";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
         <Route exact path="/contact" element={<Contact />} />
 
         <Route exact path="/products" element={<Products />} />
+
+        <Route exact path="/about" element={<About />} />
 
         <Route path='*' element={<NotFound />} />
 

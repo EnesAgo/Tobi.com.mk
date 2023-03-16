@@ -59,7 +59,7 @@ function Sponsors() {
             <ul>
                 {
                     sponsorListOne.map((e) => (
-                        <li>
+                        <li key={`${e.sponsorAlt}-${e.sponsorImg}`}>
                             <img src={e.sponsorImg} alt={e.sponsorAlt} className="sponsor__img" />
                         </li>
                     ))
@@ -68,7 +68,7 @@ function Sponsors() {
             <ul className="sponsorContainer">
                 {
                     sponsorListTwo.map((e) => (
-                        <li>
+                        <li key={`${e.sponsorAlt}-${e.sponsorImg}`}>
                             <img src={e.sponsorImg} alt={e.sponsorAlt} className="sponsor__img" />
                         </li>
                     ))

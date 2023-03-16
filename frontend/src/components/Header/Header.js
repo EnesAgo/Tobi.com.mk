@@ -42,10 +42,6 @@ function Header() {
                             <Link className='link' to="/" >Home</Link>
                         </li>
                         <li>
-                            {/* <a className="link" href="#">About Us</a> */}
-                            <Link className='link' to="/About" >About</Link>
-                        </li>
-                        <li>
                             {/* <a className="link" href="#">Instagram Posts</a> */}
                             <Link className='link' to="/products" >Products</Link>
 
@@ -54,6 +50,10 @@ function Header() {
                             {/* <a className="link" href="#">Instagram Posts</a> */}
                             <Link className='link' to="/services" >Services</Link>
 
+                        </li>
+                        <li>
+                            {/* <a className="link" href="#">About Us</a> */}
+                            <Link className='link' to="/About" >About</Link>
                         </li>
                         <li>
                             {/* <a className="link" href="#">Contact</a> */}

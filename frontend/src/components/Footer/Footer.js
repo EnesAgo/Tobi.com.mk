@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import '../../generalStyle.css'
 import './style.css'
 
@@ -9,11 +10,12 @@ function Footer() {
             <li className="pt1">
                 <h3>Company</h3>
 
-                <a href="#">Home</a> <br />
-                <a href="#">About Us</a> <br />
-                <a href="#">Producs</a> <br />
-                <a href="#">Services</a> <br />
-                <a href="#">Contact</a>
+                <Link to="/">Home</Link> <br />
+                <Link to="/products">Products</Link> <br />
+                <Link to="/services">Services</Link> <br />
+                <Link to="/about">About Us</Link> <br />
+                <Link to="/contact">Contact</Link> <br />
+
             </li>
             <li className="pt1">
                 <h3>More</h3>
