@@ -22,9 +22,9 @@ function ContainerOne() {
                         beatae accusantium ipsam repellat laboriosam. Blanditiis, 
                         fugiat eum? Sint consequatur temporibus repudiandae?
                     </p>
-                    <Link to="/about">
+                    <Link to="/products">
                     <div className="mediumYellowButton">
-                        <p>let's consult</p>
+                        <p>Products</p>
                     </div>
                     </Link>
                 </li>
