@@ -9,33 +9,70 @@ import {OneProduct, OneProductReverse} from './OneProduct'
 
 function Products() {
 
-    const prefix=""
+    const prefix = "/images/productImg/";
+    const suffix = ".jpeg";
 
     const products = [
         {
-            img: prefix+"http://tobi.com.mk/en/images/1-2-3.jpg",
-            name: "Some Name",
-            desc: "new line or dasdsd asd asd as ddsa da ads ad s new line",
-            brands: "ikea, bosch, some, car, brands"
+            img: prefix+"productOne"+suffix,
+            name: "Nozzles",
+            desc: "“P”, “S”, “DN” nozzles for all kinds of passenger and commercial vehicles, agricultural machines (tractors, combines, cultivators), \n construction machines (forklifts, excavators etc.), and all associated parts for them (nozzle holders)",
+            brands: "Bosch, Delphi, Monark, Firad, IPM, Stanadyne, Motorpal"
         },
         {
-            img: prefix+"http://tobi.com.mk/en/images/1-2-3.jpg",
-            name: "Some Name",
-            desc: "new line or dasdsd asd asd as ddsa da ads ad s new line",
-            brands: "ikea, bosch, some, car, brands"
+            img: prefix+"productTwo"+suffix,
+            name: "Elements and delivery valves",
+            desc: "elements, delivery valves, springs, camrings, oil seals, bearings, regulators, membranes for all diesel vehicles",
+            brands: "Bosch, Delphi, Monark, Firad, IPM, Stanadyne, Motorpal"
         },
         {
-            img: prefix+"http://tobi.com.mk/en/images/1-2-3.jpg",
-            name: "Some Name",
-            desc: "new line or dasdsd asd asd as ddsa da ads ad s new line",
-            brands: "ikea, bosch, some, car, brands"
+            img: prefix+"productThree"+suffix,
+            name: "Repair kits ",
+            desc: "Repair kits Gasket kits, washers, bushs, oil seals, bolts, rubbers and everything else that is needed for the repair \n of all types of DPA, DPC, DPS, VP, EPIC, Common Rail, CPR, CP3 pumps",
+            brands: "Bosch, Spaco, Flag, Monark"
         },
         {
-            img: prefix+"http://tobi.com.mk/en/images/1-2-3.jpg",
-            name: "Some Name",
-            desc: "new line or dasdsd asd asd as ddsa da ads ad s new line",
-            brands: "ikea, bosch, some, car, brands"
-        }
+            img: prefix+"productFour"+suffix,
+            name: "Hidraulic heads/ Rotors",
+            desc: "Hydraulic heads for all types of rotary pumps and all associated parts for their reparation",
+            brands: "Bosch, IPM, Fischer"
+        },
+        {
+            img: prefix+"productFive"+suffix,
+            name: "Feed pump/ AC pump",
+            desc: "feed pumps, their reparation kits, hand pumps, hand primers for all types of vehicles",
+            brands: "Bosch, BCD, Monark, IPM, Flag"
+        },
+        {
+            img: prefix+"productSix"+suffix,
+            name: "Common rail injectors",
+            desc: "injectors and and their repair kits",
+            brands: "Bosch, Denso, Siemens"
+        },
+        {
+            img: prefix+"productSeven"+suffix,
+            name: "High pressure pumps",
+            desc: "New and second hand, inline androtary pumps for many types of vehicles (cars, trucks, tractors, combines)",
+            brands: ""
+        },
+        {
+            img: prefix+"productEight"+suffix,
+            name: "Glow plugs",
+            desc: "",
+            brands: ""
+        },
+        {
+            img: prefix+"productNine"+suffix,
+            name: "Test benches",
+            desc: "",
+            brands: ""
+        },
+        {
+            img: prefix+"productTen"+suffix,
+            name: "Other",
+            desc: "solenoids,sensor nozzles, high pressure pipes, non-returning  valves, cam rings, ribbed belts, filters, wipers, rotary lights, etc.",
+            brands: ""
+        },
     ]
 
       return (

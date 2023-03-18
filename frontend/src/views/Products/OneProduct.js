@@ -4,6 +4,8 @@ import './style.css'
 
 function OneProduct({img, name, desc, brands}) {
 
+    const DisplayProducts = brands.length>1 ? true : false
+
     return (
         <div className='Product'>
             <img className='productIMG' src={img} alt={name} />
@@ -14,7 +16,10 @@ function OneProduct({img, name, desc, brands}) {
 
                 <p className='textP'>
                     <NewLineText text={desc} />
-                    <span className='textPBrands'>{brands}</span>
+                    {
+                        DisplayProducts && <span className='textPBrands'>By brands: {brands}</span>
+                    }
+                    
                 </p>
 
             </div>
@@ -25,6 +30,8 @@ function OneProduct({img, name, desc, brands}) {
 
 function OneProductReverse({img, name, desc, brands}) {
 
+    const DisplayProducts = brands.length>1 ? true : false
+
     return (
         <div className='Product'>            
             <div className='ProductText'>
@@ -33,7 +40,11 @@ function OneProductReverse({img, name, desc, brands}) {
 
                 <p className='textP'>
                     <NewLineText text={desc} />
-                    <span className='textPBrands'>{brands}</span>
+
+                    {
+                        DisplayProducts && <span className='textPBrands'>By brands: {brands}</span>
+                    }
+                    
                 </p>
             </div>
 
