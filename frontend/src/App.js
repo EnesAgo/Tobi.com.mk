@@ -14,6 +14,7 @@ import About from "./views/about/About";
 import Services from "./views/services/Services";
 
 function App() {
+  console.log("Made By Enes Ago")
   return (
     <>
 
