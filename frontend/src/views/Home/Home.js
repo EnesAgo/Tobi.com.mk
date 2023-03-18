@@ -2,6 +2,7 @@ import React from 'react'
 import ExperienceSection from '../../components/Experience/ExperienceSection';
 import Sponsors from '../../components/Sponsors/Sponsors';
 import '../../generalStyle.css'
+import ContactForm from '../contact/parts/ContactForm';
 import ContainerOne from './parts/ContainerOne';
 import ContainerTypeA from './parts/ContainerTypeA';
 import ContainerTypeB from './parts/ContainerTypeB';
@@ -68,6 +69,9 @@ function Home() {
                     })
                 }
             </ul>
+
+            <h1 style={{marginTop: "75px"}}>Contact US</h1>
+            <ContactForm />
 
             <Sponsors />
 
